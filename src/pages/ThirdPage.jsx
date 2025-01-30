@@ -7,7 +7,7 @@ const ThirdPage = () => {
   useEffect(() => {
     const fetchAiResponse = async () => {
       try {
-        const response = await fetch("https://your-backend-api.com/ai-response", {
+        const response = await fetch("http://localhost:5000/ai-response", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ input: userInput }),
